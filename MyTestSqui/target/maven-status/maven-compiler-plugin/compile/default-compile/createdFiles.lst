@@ -1,6 +1,0 @@
-com\id\enigma\MyTestSqui\App.class
-com\id\enigma\MyTestSqui\Controller\IncomingController.class
-com\id\enigma\MyTestSqui\Repository\IncomeRepository.class
-com\id\enigma\MyTestSqui\Service\IncomeServiceImpl.class
-com\id\enigma\MyTestSqui\Model\IncomingModel.class
-com\id\enigma\MyTestSqui\Service\IncomeService.class
