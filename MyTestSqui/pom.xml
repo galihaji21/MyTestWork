@@ -4,7 +4,7 @@
 
   <groupId>com.id.enigma</groupId>
   <artifactId>MyTestSqui</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>MyTestSqui</name>
@@ -48,6 +48,18 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+			 <groupId>com.id.enigma</groupId>
+  			 <artifactId>MyTestSqui2</artifactId>
+  			 <version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 

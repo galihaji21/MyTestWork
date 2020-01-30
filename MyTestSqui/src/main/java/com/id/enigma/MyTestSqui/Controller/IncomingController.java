@@ -10,16 +10,13 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.id.enigma.MyTestSqui.Model.IncomingModel;
 import com.id.enigma.MyTestSqui.Service.IncomeService;
-
-
-
-
 
 @RestController
 public class IncomingController {
@@ -72,6 +69,12 @@ public class IncomingController {
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
+	}
+	
+	@PutMapping("/incoming")
+	public ResponseEntity<IncomingModel>updateIncome(@RequestBody IncomingModel income){
+		IncomingModel updateIncome = incomeService.updateIncome(income);
+		return new ResponseEntity<>(updateIncome,HttpStatus.OK);
 	}
      
 }

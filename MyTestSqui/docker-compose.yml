@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  Test-Boot-Docker1:
+    image: galihaji21/mytestwork:mytestsqui1.0
+    build:
+      context: ./
+      dockerfile: dockerfile1
+    ports: 
+      - "9051:8080"
+    restart: always
+  Test-Boot-Docker2:
+    image: galihaji21/mytestwork:mytestsqui2.0
+    build:
+      context: ./
+      dockerfile: dockerfile2
+    ports: 
+      - "9052:8080"
+    restart: always

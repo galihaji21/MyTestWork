@@ -61,6 +61,17 @@ public class IncomeServiceImpl implements IncomeService {
 		return incomeRepository.findAll(paging);
 	}
 
+	@Override
+	public IncomingModel updateIncome(IncomingModel income) {
+		IncomingModel inc = new IncomingModel();
+		inc.setInComingId(income.getInComingId());
+		inc.setDateIncome(income.getDateIncome());
+		inc.setInformation(income.getInformation());
+		inc.setTotalIncome(income.getTotalIncome());
+		inc.setStatusId(income.getInComingId());
+		return incomeRepository.save(inc);
+	}
+
 	
 
 }

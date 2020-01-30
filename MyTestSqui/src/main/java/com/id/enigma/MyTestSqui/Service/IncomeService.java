@@ -11,4 +11,5 @@ public interface IncomeService {
 	IncomingModel deleteIncome(Long id);
 	IncomingModel findById(Long id);
 	Page<IncomingModel> findAll(Integer page,Integer pageSize);
+	IncomingModel updateIncome(IncomingModel income);
 }
